@@ -42,17 +42,9 @@ function verifyPin(){
     const pin = document.getElementById('show-pin').value;
     const typedPin = document.getElementById('typed-digits').value;
     if(pin === typedPin){
-        // const pinMatched = document.getElementById('matched');
-        // pinMatched.style.display = 'block';
-        // const pinNotMatched = document.getElementById('not-matched');
-        // pinNotMatched.style.display = "none";
         displayMatchResult('block', 'none');
     }
     else{
-        // const pinMatched = document.getElementById('matched');
-        // pinMatched.style.display = 'none';
-        // const pinNotMatched = document.getElementById('not-matched');
-        // pinNotMatched.style.display = "block";
         displayMatchResult('none', 'block');
     }
 }
